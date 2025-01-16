@@ -12,9 +12,9 @@ const ListPage = () => {
         <div className="wrapper">
           <Filte />
 
-          {/* {data.map((item) => (
+          {data.map((item) => (
             <Cards key={item.id} item={item} />
-          ))} */}
+          ))}
         </div>
       </div>
       <div className="mapContainer">Map</div>
