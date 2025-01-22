@@ -15,6 +15,10 @@ nav {
     @include sm {
       display: none;
     }
+
+    @include md {
+      font-size: 11px;
+    }
   }
 
   .left {
@@ -23,23 +27,19 @@ nav {
     gap: 30px;
     flex: 3;
 
-    // .logo{
+    .logo {
+      display: initial !important;
+      img {
+        height: 50px;
+        width: auto;
+        max-width: 100px;
 
-    img {
-      height: 50px;
-      width: auto;
-      max-width: 100px;
-
-      @include md {
-        display: none;
-      }
-
-      @include sm {
-        display: initial;
+        @include md {
+          height: 40px;
+          width: auto;
+        }
       }
     }
-
-    // }
   }
 
   .right {
@@ -49,6 +49,87 @@ nav {
     flex: 2;
     background-color: #fcf5f3;
     height: 100%;
+
+    @include md {
+      margin-left: 10px;
+    }
+
+    @include sm {
+      gap: 15px;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+
+      img {
+        width: 34px;
+        height: 34px;
+        object-fit: cover;
+        border-radius: 50px;
+
+        @include md {
+          width: 28px;
+          height: 28px;
+        }
+
+        @include sm {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      span {
+        @include sm {
+          display: none;
+        }
+
+        @include md {
+          font-size: 12px;
+        }
+      }
+
+      .profileButton {
+        position: relative;
+        padding: 10px 22px;
+        background-color: #fece51;
+        border-radius: 2px;
+        cursor: pointer;
+
+        @include md {
+          padding: 6px 17px;
+        }
+
+        .notification {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(247, 50, 50);
+          border-radius: 50%;
+          color: white;
+          font-size: 14px;
+          top: -8px;
+          right: -8px;
+
+          @include md {
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+          }
+        }
+
+        span {
+          @include md {
+            font-size: 10px;
+          }
+        }
+      }
+    }
 
     @include md {
       background-color: transparent;
@@ -62,6 +143,10 @@ nav {
 
       @include sm {
         display: none;
+      }
+
+      @include md {
+        font-weight: bold;
       }
     }
 

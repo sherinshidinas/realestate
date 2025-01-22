@@ -1,0 +1,20 @@
+.popupContainer {
+  display: flex;
+  gap: 10px;
+  img {
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    b {
+      color: rgb(33, 144, 33);
+    }
+  }
+}
