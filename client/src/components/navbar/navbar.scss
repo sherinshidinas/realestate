@@ -38,6 +38,11 @@ nav {
           height: 40px;
           width: auto;
         }
+
+        @include sm {
+          height: 60px;
+          width: auto;
+        }
       }
     }
   }

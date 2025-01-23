@@ -1,3 +1,4 @@
+@import "../../responsive.scss";
 .home {
   display: flex;
   height: 100%;
@@ -14,6 +15,16 @@
 
       .title {
         font-size: 42px;
+
+        @include sm{
+          font-size: 40px;
+        }
+      }
+
+      .desc{
+        @include sm{
+          font-size: 16px;
+        }
       }
 
       .boxes {
@@ -23,11 +34,17 @@
         .box {
           h1 {
             font-size: 30px;
+            @include sm{
+              font-size: 28px;
+            }
           }
 
           h2 {
             font-size: 14px;
             font-weight: 300;
+            @include sm{
+              font-size: 12px;
+            }
           }
         }
       }

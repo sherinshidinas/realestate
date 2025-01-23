@@ -38,7 +38,7 @@
       width: 100px;
       outline: none;
 
-      @include lg{
+      @include lg {
         padding: 0px 4px;
       }
     }
@@ -48,6 +48,10 @@
       background-color: #fece51;
       cursor: pointer;
       flex: 0.5;
+
+      @include sm{
+        padding: 10px;
+      }
 
       img {
         width: 20px;

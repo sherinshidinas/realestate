@@ -13,7 +13,7 @@ const Navbar = () => {
           <img src="../images/logofoton2.png" alt="Logo" />
         </a>
 
-        <a href="">Home</a>
+        <a href="/">Home</a>
         <a href="">About</a>
         <a href="">Contact</a>
         <a href="">Agents</a>
